@@ -9,7 +9,7 @@ int main(void)
     {
         n = get_int("Positive Integer: ");
     }
-    while (while > 1);
+    while (n > 9);
 
     // TODO: Prompt for end size
 
