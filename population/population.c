@@ -12,6 +12,12 @@ int main(void)
     while (n > 9);
 
     // TODO: Prompt for end size
+     int x;
+    do
+    {
+        x = get_int("Positive Integer: ");
+    }
+    while (x >= 9);
 
     // TODO: Calculate number of years until we reach threshold
     n = n + (n / 3) - (n / 4);
