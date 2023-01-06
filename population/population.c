@@ -4,6 +4,13 @@
 int main(void)
 {
     // TODO: Prompt for start size
+    in start;
+    do
+    {
+        start = get_int("Start size: ");
+    }
+    while (start < 9);
+
 
     // TODO: Prompt for end size
 
