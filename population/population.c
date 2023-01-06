@@ -12,7 +12,7 @@ int main(void)
     while (start < 9);
 
     // TODO: Prompt for end size
-     int end;
+    int end;
     do
     {
         end = get_int("End size: ");
