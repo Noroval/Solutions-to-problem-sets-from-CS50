@@ -4,6 +4,12 @@
 int main(void)
 {
     // TODO: Prompt for start size
+    int n;
+    do
+    {
+        n = get_int("Positive Integer: ");
+    }
+    while (while > 1);
 
     // TODO: Prompt for end size
 
