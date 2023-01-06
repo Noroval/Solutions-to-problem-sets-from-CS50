@@ -14,6 +14,7 @@ int main(void)
     // TODO: Prompt for end size
 
     // TODO: Calculate number of years until we reach threshold
+    n = n + (n / 3) - (n / 4);
 
     // TODO: Print number of years
 }
