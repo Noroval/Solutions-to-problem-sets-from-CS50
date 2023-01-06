@@ -22,15 +22,12 @@ int main(void)
     //Keep track of number of years
     int years = 0;
 
-    //Update population
+    //TODO: Calculate number of years until we reach threshold
     while (start < end)
     {
          start = start + (start / 3) - (start / 4);
          years++;
     }
-
-    // TODO: Calculate number of years until we reach threshold
-    n = n + (n / 3) - (n / 4);
 
     // TODO: Print number of years
     printf("Years: %i\n", n);
