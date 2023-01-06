@@ -17,7 +17,7 @@ int main(void)
     {
         end = get_int("End size: ");
     }
-    while (end <= start);
+    while (end < start);
 
     //Keep track of number of years
     int years = 0;
