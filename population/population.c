@@ -19,6 +19,9 @@ int main(void)
     }
     while (end <= start);
 
+    //Keep track of number of years
+    int years = 0;
+
     // TODO: Calculate number of years until we reach threshold
     n = n + (n / 3) - (n / 4);
 
