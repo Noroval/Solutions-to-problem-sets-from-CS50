@@ -17,4 +17,5 @@ int main(void)
     n = n + (n / 3) - (n / 4);
 
     // TODO: Print number of years
+    printf("Years: %i\n", n);
 }
