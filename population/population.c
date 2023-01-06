@@ -4,20 +4,20 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    int n;
+    int start;
     do
     {
-        n = get_int("Positive Integer: ");
+        start = get_int("Start size: ");
     }
-    while (n > 9);
+    while (start < 9);
 
     // TODO: Prompt for end size
-     int x;
+     int end;
     do
     {
-        x = get_int("Positive Integer: ");
+        end = get_int("End size: ");
     }
-    while (x >= 9);
+    while (end <= 9);
 
     // TODO: Calculate number of years until we reach threshold
     n = n + (n / 3) - (n / 4);
