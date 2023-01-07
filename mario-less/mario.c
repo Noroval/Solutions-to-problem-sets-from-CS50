@@ -9,13 +9,13 @@ int main(void)
     int space;
     do
     {
-        height = get_int ("Height: ");
+        height = get_int("Height: ");
     }
     while (height < 1 || height > 8);
 
     for (row = 0; row < height; row++)
     {
-        for (space = 0; space < height - row -1; space++)
+        for (space = 0; space < height - row - 1; space++)
         {
             printf(" ");
         }
