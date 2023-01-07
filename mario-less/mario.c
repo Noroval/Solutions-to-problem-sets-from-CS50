@@ -3,7 +3,9 @@
 
 int main(void)
 {
-    int height; row; column
+    int height;
+    int row;
+    int column;
     do
     {
         height = get_int ("Height: ");
