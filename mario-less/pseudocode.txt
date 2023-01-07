@@ -1,2 +1,4 @@
 ask for input
 if height less than 1 or bigger than 8 go back to input
+iterate from 1 through input value
+on iteration print i and hashes and new line
