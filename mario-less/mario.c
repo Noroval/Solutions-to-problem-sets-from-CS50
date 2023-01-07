@@ -17,7 +17,7 @@ int get_size(void)
     {
         n = get_int("Size: ");
     }
-    while (n < 1 && n > 8);
+    while (n < 1 || n > 8);
     return n;
 }
 
