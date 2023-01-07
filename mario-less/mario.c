@@ -27,7 +27,7 @@ void print_grid(int n)
     {
         for (int j = 0; j < n; j++)
         {
-            for (int z = 0; z )
+            for (int z = 0; z < n; z++)
         }
         {
             printf("#");
