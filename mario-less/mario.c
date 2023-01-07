@@ -1,40 +1,17 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_size(void);
-void print_grid(int n);
-
 int main(void)
 {
-    int n = get_size();
-    print_grid(n);
-}
-
-int get_size(void)
-{
-    int n;
+    int height;
     do
     {
-        n = get_int("Size: ");
+        height = get_int ("Height: ");
     }
-    while (n < 1 || n > 8);
-    return n;
-}
+    while (height < 1 || height > 8);
 
-void print_grid(int n)
-{
-    for (int i = 0; i < n; i++)
+    for (row = 0; row < height; row++)
     {
-        for (int j = 0; j < n; j++)
-        {
-            for (int z = 8; z > n; z++)
-            {
-                printf(".");
-            }
-        }
-        {
-            printf("#");
-        }
         printf("\n");
     }
 }
