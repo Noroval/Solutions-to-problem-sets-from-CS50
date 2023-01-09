@@ -48,6 +48,8 @@ int get_cents(void)
 
 int calculate_quarters(int cents)
 {
+    in quarters = 0;
+    while (cents >= 25);
     
     return 0;
 }
