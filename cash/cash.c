@@ -38,7 +38,9 @@ int main(void)
 int get_cents(void)
 {
     do
-    
+    {
+        
+    }
     return 0;
 }
 
