@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-
+#include <math.h>
 
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
             sentences++;
         }
     }
-    int index = 0.0588 * L - 0.296 * S - 15.8
+    int index = round(0.0588 * L - 0.296 * S - 15.8);
 
 
 
