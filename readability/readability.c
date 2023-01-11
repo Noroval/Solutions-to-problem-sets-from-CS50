@@ -27,8 +27,8 @@ int main(void)
             sentences++;
         }
     }
-    int L = letters / words * 100
-    int S =  sentences / words * 100
+    int L = letters / words * 100;
+    int S =  sentences / words * 100;
 
     int index = round(0.0588 * L - 0.296 * S - 15.8);
 
