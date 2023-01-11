@@ -27,5 +27,16 @@ int compute_score(string word)
     int score = 0;
 
     // TODO: Compute and return score for string
-    for (int i = 0; len = strlen(word); )
+    for (int i = 0; len = strlen(word); i < len; i++)
+    {
+        if (isupper(word[i]))
+        {
+            score += POINTS[word[i] - '65'];
+        }
+        else if (islower(word[i]))
+        {
+            score += POINTS[word[i] - '97'];
+        }
+    }
+    return score;
 }
