@@ -23,7 +23,7 @@ int main(void)
 
 int compute_score(string word)
 {
-    //Keep track of score
+    //Count score
     int score = 0;
 
     // TODO: Compute and return score for string
