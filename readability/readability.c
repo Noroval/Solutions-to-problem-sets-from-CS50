@@ -22,7 +22,7 @@ int main(void)
         {
             words++;
         }
-        else if (text[i] == '.' || '!' || '?')
+        else if (text[i] == '.' || text[i] == '!' || text[i] == '?')
         {
             sentences++;
         }
