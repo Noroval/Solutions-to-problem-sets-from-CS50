@@ -4,8 +4,10 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+//declare functions
+
 int main(int argc, string argv[])
-only_digits
+
 {
     //checks if it's one argument
 
