@@ -34,8 +34,12 @@ int main(int argc, string argv[])
             {
                 printf("%c", (plaintext[j] -97 + key) % 26 + 97);
             }
-            
+            else
+            {
+                printf("%c", plaintext[j]);
+            }
         }
+        printf("\n");
     }
 
 }
