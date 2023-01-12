@@ -20,8 +20,10 @@ int main(int argc, string argv[])
             printf("Usage: ./caesar key\n");
             return 1;
         }
+        //converts string to an int
         int key = atoi(argv[1]);
 
+        //asks user for text
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
 
