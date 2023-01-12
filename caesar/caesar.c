@@ -4,5 +4,8 @@
 int main(int argc, string argv[])
 {
     //
-    if
+    if (argc != 2)
+    {
+        printf()
+    }
 }
