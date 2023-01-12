@@ -18,14 +18,7 @@ int main(int argc, string argv[])
     }
     //checks if it's digit or not
 
-    for (int i = 0; i < strlen(argv[1]); i++)
-    {
-        if (isdigit(argv[1][i]))
-        {
-            printf("Usage: ./caesar key\n");
-            return 1;
-        }
-    }
+
         //converts string to an int
 
         int key = atoi(argv[1]);
@@ -53,5 +46,14 @@ int main(int argc, string argv[])
             }
         }
         printf("\n");
+    }
+    bool only_digits(string s)
+    for (int i = 0; i < strlen(argv[1]); i++)
+    {
+        if (isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
     }
 
