@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    //
+    //Program checks if it's one argument
     if (argc != 2)
     {
         printf("Input one argument!\n");
