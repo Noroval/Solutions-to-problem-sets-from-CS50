@@ -45,15 +45,15 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-    bool only_digits(string s)
+bool only_digits(string s)
+{
+    for (int i = 0; i < strlen(argv[1]); i++)
     {
-        for (int i = 0; i < strlen(argv[1]); i++)
+        if (!isdigit(argv[1][i]))
         {
-            if (!isdigit(argv[1][i]))
-            {
-                printf("Usage: ./caesar key\n");
-                return 1;
-            }
+            printf("Usage: ./caesar key\n");
+            return 1;
         }
     }
-   
+}
+
