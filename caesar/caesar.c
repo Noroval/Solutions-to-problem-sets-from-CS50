@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     }
 
     //checks if it's digit or not
-    bool only_digits(argv[1]);
+    bool only_digits(1);
 
     //converts string to an int
     int key = atoi(argv[1]);
