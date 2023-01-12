@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
@@ -18,5 +19,7 @@ int main(int argc, string argv[])
             printf("Usage: ./caesar key\n");
             return 1;
         }
+        int key = atoi(argv[1]);
     }
+
 }
