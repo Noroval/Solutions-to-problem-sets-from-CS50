@@ -7,12 +7,14 @@
 int main(int argc, string argv[])
 {
     //checks if it's one argument
+
     if (argc != 2)
     {
         printf("Input one argument!\n");
         return 1;
     }
     //checks if it's digit or not
+
     for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (!isdigit(argv[1][i]))
@@ -22,9 +24,11 @@ int main(int argc, string argv[])
         }
     }
         //converts string to an int
+
         int key = atoi(argv[1]);
 
         //asks user for text
+        
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
 
