@@ -9,4 +9,5 @@ int main(int argc, string argv[])
         printf("Input one argument!\n");
         return 1;
     }
+    for (int i = 0; i < strlen(argv[1]; i++))
 }
