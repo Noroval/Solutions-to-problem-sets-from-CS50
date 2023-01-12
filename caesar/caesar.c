@@ -26,7 +26,10 @@ int main(int argc, string argv[])
 
         for (int = j; j < strlen(plaintext); j++)
         {
-            if 
+            if (isupper(plaintext[j]))
+            {
+                printf()
+            }
         }
     }
 
