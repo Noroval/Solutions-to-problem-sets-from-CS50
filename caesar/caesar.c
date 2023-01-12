@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 int main(int argc, string argv[])
+only_digits
 {
     //checks if it's one argument
 
@@ -33,7 +34,7 @@ int main(int argc, string argv[])
         printf("ciphertext: ");
 
         //for every character in text encrypts it according to argument input
-        
+
         for (int j = 0; j < strlen(plaintext); j++)
         {
             if (isupper(plaintext[j]))
