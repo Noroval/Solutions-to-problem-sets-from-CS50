@@ -32,7 +32,8 @@ int main(int argc, string argv[])
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
 
-        //for every character in text 
+        //for every character in text encrypts it according to argument input
+        
         for (int j = 0; j < strlen(plaintext); j++)
         {
             if (isupper(plaintext[j]))
