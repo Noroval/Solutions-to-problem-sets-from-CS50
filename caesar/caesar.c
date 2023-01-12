@@ -23,6 +23,11 @@ int main(int argc, string argv[])
 
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
+
+        for (int = j; j < strlen(plaintext); j++)
+        {
+            if 
+        }
     }
 
 }
