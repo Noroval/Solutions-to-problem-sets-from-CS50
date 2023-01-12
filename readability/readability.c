@@ -28,7 +28,13 @@ int main(void)
         }
     }
     int L = letters / words * 100;
+    {
+        printf(L);
+    }
     int S =  sentences / words * 100;
+    {
+        printf(S);
+    }
 
     int index = round(0.0588 * L - 0.296 * S - 15.8);
 
