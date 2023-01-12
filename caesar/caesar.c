@@ -49,17 +49,10 @@ int main(int argc, string argv[])
 
     for (int i = 0; i < strlen(argv[1]); i++)
     {
-        if (isdigit(argv[1][i]))
+        if (!isdigit(argv[1][i]))
         {
-            if false
-            {
-                printf("Usage: ./caesar key\n");
-                return 1;
-            }
-            else if true
-            {
-                return 0;
-            }
+            printf("Usage: ./caesar key\n");
+            return 1;
         }
     }
 
