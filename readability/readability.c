@@ -7,7 +7,7 @@
 int main(void)
 {
     int letters = 0;
-    int words = 0;
+    int words = 1;
     int sentences = 0;
 
     string text = get_string("Text: ");
