@@ -28,11 +28,11 @@ int main(int argc, string argv[])
         int key = atoi(argv[1]);
 
         //asks user for text
-        
+
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
 
-        //
+        //for every character in text 
         for (int j = 0; j < strlen(plaintext); j++)
         {
             if (isupper(plaintext[j]))
