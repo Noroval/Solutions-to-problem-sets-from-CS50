@@ -13,6 +13,10 @@ int main(int argc, string argv[])
     }
     for (int i = 0; i < strlen(argv[1]; i++))
     {
-        if 
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
     }
 }
