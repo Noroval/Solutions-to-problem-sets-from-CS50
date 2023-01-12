@@ -27,14 +27,8 @@ int main(void)
             sentences++;
         }
     }
-    int L = letters / words * 100;
-    {
-        printf(L);
-    }
-    int S =  sentences / words * 100;
-    {
-        printf(S);
-    }
+    float L = (float)letters / words * 100;
+    float S =  (float)sentences / words * 100;
 
     int index = round(0.0588 * L - 0.296 * S - 15.8);
 
