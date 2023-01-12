@@ -17,7 +17,7 @@ int main(int argc, string argv[])
         return 1;
     }
     //checks if it's digit or not
-    bool only_digits(argv[1]);
+    bool only_digits(argv[]);
 
         //converts string to an int
 
