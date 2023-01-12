@@ -24,7 +24,7 @@ int main(int argc, string argv[])
         string plaintext = get_string("plaintext: ");
         printf("ciphertext: ");
 
-        for (int = j; j < strlen(plaintext); j++)
+        for (int j = 0; j < strlen(plaintext); j++)
         {
             if (isupper(plaintext[j]))
             {
