@@ -17,6 +17,7 @@ int main(int argc, string argv[])
         return 1;
     }
     //checks if it's digit or not
+    
 
 
         //converts string to an int
@@ -48,6 +49,7 @@ int main(int argc, string argv[])
         printf("\n");
     }
     bool only_digits(string s)
+
     for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (isdigit(argv[1][i]))
