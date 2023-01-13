@@ -51,9 +51,9 @@ bool only_digits(string s)
     {
         if (!isdigit(s[i]))
         {
-            printf("Usage: ./caesar key\n");
-            return 1;
+            return false;
         }
     }
+    return true;
 }
 
