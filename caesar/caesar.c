@@ -55,6 +55,7 @@ int rotate(char c, int key)
         return c;
     }
 }
+
 //creating function which checks if key is digit
 bool only_digits(string s)
 {
