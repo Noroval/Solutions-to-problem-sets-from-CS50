@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     bool only_digits = (argv[1]);
 
     //converts string to an int
-    int key = atoi(argv[1]);
+    int k = atoi(argv[1]);
 
     //asks user for text
     string plaintext = get_string("plaintext: ");
@@ -31,11 +31,11 @@ int main(int argc, string argv[])
     {
         if (isupper(plaintext[j]))
         {
-            printf("%c", (plaintext[j] -65 + key) % 26 + 65);
+            printf("%c", (plaintext[j] -65 + k) % 26 + 65);
         }
         else if (islower(plaintext[j]))
         {
-            printf("%c", (plaintext[j] -97 + key) % 26 + 97);
+            printf("%c", (plaintext[j] -97 + k) % 26 + 97);
         }
         else
         {
