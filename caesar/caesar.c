@@ -49,7 +49,7 @@ bool only_digits(string k)
 {
     for (int i = 0; i < strlen(k); i++)
     {
-        if (!isdigit(argv[1][i]))
+        if (!isdigit(k[i]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
