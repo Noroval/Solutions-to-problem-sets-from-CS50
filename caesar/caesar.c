@@ -8,7 +8,6 @@
 bool only_digits(string s);
 int rotate(char c, int key);
 int main(int argc, string argv[])
-
 {
     //checks if it's one argument and digit
     if (argc != 2 || !only_digits(argv[1]))
@@ -27,7 +26,7 @@ int main(int argc, string argv[])
     string plaintext = get_string("plaintext: ");
     printf("ciphertext: ");
 
-    //for every character in text encrypts it according to argument input
+    //iterate through and calls rotate function, prints encrypted text
     for (int j = 0; j < strlen(plaintext); j++)
     {
         printf("%c", rotate(plaintext[j], key));
@@ -35,6 +34,7 @@ int main(int argc, string argv[])
     printf("\n");
 }
 
+//creating function which checks if character is aplhabet and upper/lower and apply formula
 int rotate(char c, int key)
 {
     if (isalpha(c))
