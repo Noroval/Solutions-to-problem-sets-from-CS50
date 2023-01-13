@@ -34,6 +34,7 @@ int main(int argc, string argv[])
     printf("\n");
 }
 
+
 //creating function which checks if character is aplhabet and upper/lower and apply formula
 int rotate(char c, int key)
 {
