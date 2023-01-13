@@ -32,6 +32,10 @@ int main(int argc, string argv[])
 
     int rotate(char c, int key)
     {
+        if (isalpha(c))
+        {
+            
+        }
         if (isupper(plaintext[j]))
         {
             printf("%c", (plaintext[j] -65 + key) % 26 + 65);
