@@ -30,25 +30,25 @@ int main(int argc, string argv[])
     //for every character in text encrypts it according to argument input
     for (int j = 0; j < strlen(plaintext); j++)
 
-    int rotate(char c, int key)
+int rotate(char c, int key)
+{
+    if (isalpha(c))
     {
-        if (isalpha(c))
+        if (isupper(c))
         {
-            if (isupper(c))
-            {
-                char ch = (c - 65 + key) % 26 + 65;
-                return ch;
-            }
-            else
-            {
-                char ch = (c - 97 + key) % 26 + 97;
-                return ch;
-            }
+            char ch = (c - 65 + key) % 26 + 65;
+            return ch;
         }
         else
         {
-            return c;
+            char ch = (c - 97 + key) % 26 + 97;
+            return ch;
         }
+    }
+    else
+    {
+        return c;
+    }
 
 
 
