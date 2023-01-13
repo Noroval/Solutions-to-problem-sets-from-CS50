@@ -29,6 +29,11 @@ int main(int argc, string argv[])
 
     //for every character in text encrypts it according to argument input
     for (int j = 0; j < strlen(plaintext); j++)
+    {
+        printf("%c", rotate(plaintext[i], key));
+    }
+    printf("\n");
+}
 
 int rotate(char c, int key)
 {
@@ -49,24 +54,7 @@ int rotate(char c, int key)
     {
         return c;
     }
-
-
-
-        {
-            printf("%c", (plaintext[j] -65 + key) % 26 + 65);
-        }
-        else if (islower(plaintext[j]))
-        {
-            printf("%c", (plaintext[j] -97 + key) % 26 + 97);
-        }
-        else
-        {
-            printf("%c", plaintext[j]);
-        }
-    }
-        printf("\n");
-    }
-
+}
 //creating function which checks if key is digit
 bool only_digits(string s)
 {
