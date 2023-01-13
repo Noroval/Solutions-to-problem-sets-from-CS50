@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 //declare functions
-bool only_digits(string s);
+bool only_digits(string k);
 int main(int argc, string argv[])
 
 {
