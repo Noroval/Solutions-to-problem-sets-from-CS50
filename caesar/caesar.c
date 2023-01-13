@@ -47,7 +47,7 @@ int main(int argc, string argv[])
 
 bool only_digits(string k)
 {
-    for (int i = 0; i < strlen(argv[1]); i++)
+    for (int i = 0; i < strlen(k); i++)
     {
         if (!isdigit(argv[1][i]))
         {
