@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     //for every character in text encrypts it according to argument input
     for (int j = 0; j < strlen(plaintext); j++)
     {
-        printf("%c", rotate(plaintext[i], key));
+        printf("%c", rotate(plaintext[j], key));
     }
     printf("\n");
 }
