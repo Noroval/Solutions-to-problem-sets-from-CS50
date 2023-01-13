@@ -6,6 +6,7 @@
 
 //declare functions
 bool only_digits(string s);
+int rotate(char c, int key);
 int main(int argc, string argv[])
 
 {
