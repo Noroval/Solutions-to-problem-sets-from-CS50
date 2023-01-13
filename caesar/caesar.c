@@ -12,12 +12,12 @@ int main(int argc, string argv[])
     //checks if it's one argument
     if (argc != 2)
     {
-        printf("Input one argument!\n");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
 
     //checks if it's digit or not
-    bool only_digits(string k);
+    bool only_digits(string s);
 
     //converts string to an int
     int key = atoi(argv[1]);
@@ -45,11 +45,11 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
-bool only_digits(string k)
+bool only_digits(string s)
 {
-    for (int i = 0; i < strlen(k); i++)
+    for (int i = 0; i < strlen(s); i++)
     {
-        if (!isdigit(k[i]))
+        if (!isdigit(s[i]))
         {
             printf("Usage: ./caesar key\n");
             return 1;
