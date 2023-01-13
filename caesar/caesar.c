@@ -35,6 +35,11 @@ int main(int argc, string argv[])
         if (isalpha(c))
         {
             if (isupper(c))
+            {
+                char ch = (c - 65 + key) % 26 + 65;
+                return ch;
+            }
+            else
         }
 
         {
