@@ -9,7 +9,7 @@ bool only_digits(string s);
 int main(int argc, string argv[])
 
 {
-    //checks if it's one argument
+    //checks if it's one argument and digit
     if (argc != 2 || !only_digits(argv[1]))
     {
         printf("Usage: ./caesar key\n");
@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     }
     return 0;
 
-    //checks if it's digit or not
+    //call function who checks if it's digit or not
     bool only_digits(string s);
 
     //converts string to an int
