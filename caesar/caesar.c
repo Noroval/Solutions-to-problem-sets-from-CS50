@@ -16,7 +16,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-
     //call function who checks if it's digit or not
     bool only_digits(string s);
 
