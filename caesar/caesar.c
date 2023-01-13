@@ -40,7 +40,17 @@ int main(int argc, string argv[])
                 return ch;
             }
             else
+            {
+                char ch = (c - 97 + key) % 26 + 97;
+                return ch;
+            }
         }
+        else
+        {
+            return c;
+        }
+
+
 
         {
             printf("%c", (plaintext[j] -65 + key) % 26 + 65);
