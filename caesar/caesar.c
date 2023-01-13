@@ -45,6 +45,7 @@ int main(int argc, string argv[])
         printf("\n");
     }
 
+//creating function which checks if key is digit
 bool only_digits(string s)
 {
     for (int i = 0; i < strlen(s); i++)
