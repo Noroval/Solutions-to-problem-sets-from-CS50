@@ -34,9 +34,9 @@ int main(int argc, string argv[])
     {
         if (isalpha(c))
         {
-            
+            if (isupper(c))
         }
-        if (isupper(plaintext[j]))
+
         {
             printf("%c", (plaintext[j] -65 + key) % 26 + 65);
         }
