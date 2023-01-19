@@ -160,7 +160,14 @@ void tabulate(void)
 bool print_winner(void)
 {
     int majority = (voter_count / 2);
-    
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (candidates[i].votes > majority)
+        {
+            
+        }
+    }
     return false;
 }
 
