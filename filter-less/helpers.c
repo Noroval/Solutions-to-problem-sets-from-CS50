@@ -45,7 +45,14 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE temp[height][width];
-    
+
+    for (int row = 0; row < height; row++)
+    {
+        for (int column = 0; column < width; column++)
+        {
+            image[row][column] = temp[row][column];
+        }
+    }
 
     for (int row = 0; row < height; row++)
     {
