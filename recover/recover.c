@@ -15,4 +15,6 @@ int main(int argc, char *argv[])
     printf("Error while opening the file.\n");
     return 1;
  }
+
+ 
 }
