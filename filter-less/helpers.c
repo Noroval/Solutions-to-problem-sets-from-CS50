@@ -51,7 +51,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         int position = 0;
         for (int column = width - 1; column >= 0; column--, position++)
         {
-            image[row][column] = temp[row][column];
+            temp[row][position] = image[row][column];
         }
     }
 
