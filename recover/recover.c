@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
  if (argc != 2)
  {
+    //making sure arguments are 2
     printf("Usage: ./recover IMAGE\n");
     return 1;
  }
