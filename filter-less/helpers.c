@@ -46,6 +46,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE temp[height][width];
 
+    //copy to temp location
     for (int row = 0; row < height; row++)
     {
         int position = 0;
@@ -55,6 +56,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
+    //copy to final location
     for (int row = 0; row < height; row++)
     {
         for (int column = 0; column < width; column++)
