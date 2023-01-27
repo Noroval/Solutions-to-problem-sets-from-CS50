@@ -85,7 +85,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int j = -1; j < 2; j++)
                 {
-                    if (row + i < 0 || row + i > height -1 || column + j < 0 || column + j > width -1)
+                    if (row + i < 0 || row + i > height - 1 || column + j < 0 || column + j > width - 1)
                     {
                         continue;
                     }
@@ -98,9 +98,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
             }
 
-            temp[row][column].rgbtRed = round(avgRed/count);
-            temp[row][column].rgbtGreen = round(avgGreen/count);
-            temp[row][column].rgbtBlue = round(avgBlue/count);
+            temp[row][column].rgbtRed = round(avgRed / count);
+            temp[row][column].rgbtGreen = round(avgGreen / count);
+            temp[row][column].rgbtBlue = round(avgBlue / count);
         }
     }
 
