@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
  FILE *file = fopen(argv[1], "r");
  if (file == NULL)
  {
-    printf("Error while opening the file.\n")'
+    printf("Error while opening the file.\n");
     return 1;
  }
 }
