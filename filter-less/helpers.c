@@ -8,8 +8,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int column = 0; column < width; column++)
         {
-            int average = round((image[row][column].rgbtRed + image[row][column].rgbtGreen + image[row][column].rgbtBlue) / 3.0);
-            image[row][column].rgbtRed = image[row][column].rgbtGreen = image[row][column].rgbtBlue = average;
+            RGBTRIPLE pixcolor = image[row][column];
+            int average = round((pixcolor.rgbtRed + pixcolor.rgbtGreen + pixcolor.rgbtBlue) / 3.0);
+            pixcolor.rgbtRed = pixcolor.rgbtGreen = pixcolor.rgbtBlue = average;
         }
     }
     return;
@@ -18,7 +19,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
 // Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
-    
+
     return;
 }
 
