@@ -9,7 +9,8 @@ int main(int argc, char *argv[])
     printf("Usage: ./recover IMAGE\n");
     return 1;
  }
-
+ 
+//opens file for reading
  FILE *file = fopen(argv[1], "r");
  if (file == NULL)
  {
