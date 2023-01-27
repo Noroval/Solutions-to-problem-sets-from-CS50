@@ -80,12 +80,11 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         }
     }
 
-     //copy to final location
     for (int row = 0; row < height; row++)
     {
         for (int column = 0; column < width; column++)
         {
-            image[row][column] = temp[row][column];
+            image[row][column].;
         }
     }
     return;
