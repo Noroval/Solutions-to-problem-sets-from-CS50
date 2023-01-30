@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     fwrite(&buffer, 512, 1, image);
   }
  }
- //close any remaining files
+ //close remaining files
  fclose(file);
  fclose(image);
 }
