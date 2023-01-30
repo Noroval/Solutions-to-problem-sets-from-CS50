@@ -26,6 +26,8 @@ int main(int argc, char *argv[])
  FILE *img_pointer = NULL;
  char filename[8];
 
+ while (fread(&buffer, 512, 1, input_pointer) == 1)
+
  //open memory card
  //repeat untill end of the card:
       //read 512 bytes into a buffer
