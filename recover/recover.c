@@ -26,10 +26,10 @@ int main(int argc, char *argv[])
  FILE *image = NULL;
  char filename[8];
 
+ //repeat untill end of the card:
  while (fread(&buffer, 512, 1, file) == 1)
 
- //open memory card
- //repeat untill end of the card:
+
       //read 512 bytes into a buffer
       //if start of new JPEG
         //if first JPEG
