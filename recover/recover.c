@@ -38,12 +38,12 @@ int main(int argc, char *argv[])
       fclose(image);
     }
     sprintf(filename, "%03i.jpg", count);
-    file = fopen(filename, "w");
+    image = fopen(filename, "w");
     count++;
   }
   if (!(count == 0))
   {
-    fwrite(&buffer, 512, 1, img_pointer);
+    fwrite(&buffer, 512, 1, image);
   }
  }
 
