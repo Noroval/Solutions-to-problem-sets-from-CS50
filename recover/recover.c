@@ -54,4 +54,6 @@ int main(int argc, char *argv[])
  //close remaining files
  fclose(file);
  fclose(image);
+
+ return 0;
 }
