@@ -41,6 +41,10 @@ int main(int argc, char *argv[])
     file = fopen(filename, "w");
     count++;
   }
+  if (!(count == 0))
+  {
+    fwrite(&buffer, 512, 1, img_pointer);
+  }
  }
 
 
