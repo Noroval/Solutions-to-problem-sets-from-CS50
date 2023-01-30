@@ -43,20 +43,11 @@ int main(int argc, char *argv[])
   }
   if (!(count == 0))
   {
+    //write new file
     fwrite(&buffer, 512, 1, image);
   }
  }
+ //close any remaining files
  fclose(file);
  fclose(image);
-
-
-        //mark first
-
-        //else
-        //close current, open new one
-
-      //else
-        //if already found JPEG
-
-  //close any remaining files
 }
