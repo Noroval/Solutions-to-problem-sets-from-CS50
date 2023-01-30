@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
   {
     if (!(count == 0))
     {
-      fclose(img_pointer);
+      fclose(image);
     }
   }
  }
