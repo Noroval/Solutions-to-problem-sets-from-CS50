@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
+
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
@@ -9,7 +12,7 @@ int main(int argc, char *argv[])
     printf("Usage: ./recover IMAGE\n");
     return 1;
  }
- 
+
 //opens file for reading
  FILE *file = fopen(argv[1], "r");
  if (file == NULL)
