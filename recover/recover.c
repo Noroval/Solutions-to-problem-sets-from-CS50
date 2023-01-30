@@ -37,10 +37,13 @@ int main(int argc, char *argv[])
     {
       fclose(image);
     }
+    sprintf(filename, "%03i.jpg", count);
+    file = fopen(filename, "w");
+    count++;
   }
  }
 
-        //if first JPEG
+
         //mark first
 
         //else
