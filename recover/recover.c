@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
  //opens file for reading
  FILE *file = fopen(argv[1], "r");
- 
+
  if (file == NULL)
  {
     printf("Could not open file.\n");
@@ -38,16 +38,19 @@ int main(int argc, char *argv[])
     {
       fclose(image);
     }
+
     sprintf(filename, "%03i.jpg", count);
     image = fopen(filename, "w");
     count++;
   }
+
   if (!(count == 0))
   {
     //write new file
     fwrite(&buffer, 512, 1, image);
   }
  }
+
  //close remaining files
  fclose(file);
  fclose(image);
