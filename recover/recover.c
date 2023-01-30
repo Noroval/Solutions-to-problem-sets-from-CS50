@@ -23,10 +23,10 @@ int main(int argc, char *argv[])
 
  BYTE buffer[512];
  int count = 0;
- FILE *img_pointer = NULL;
+ FILE *image = NULL;
  char filename[8];
 
- while (fread(&buffer, 512, 1, input_pointer) == 1)
+ while (fread(&buffer, 512, 1, file) == 1)
 
  //open memory card
  //repeat untill end of the card:
