@@ -46,6 +46,8 @@ int main(int argc, char *argv[])
     fwrite(&buffer, 512, 1, image);
   }
  }
+ fclose(file);
+ fclose(image);
 
 
         //mark first
