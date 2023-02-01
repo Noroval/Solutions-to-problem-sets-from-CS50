@@ -32,9 +32,9 @@ bool check(const char *word)
     node *cursor = table[hash_value];
 
     //loop through the list
-    while(cursor != 0)
+    while (cursor != 0)
     {
-        if(strcasecmp(cursor->word, word) == 0)
+        if (strcasecmp(cursor->word, word) == 0)
         {
             return true;
         }
@@ -57,7 +57,7 @@ bool load(const char *dictionary)
     FILE *dfile = fopen(dictionary, "r");
 
     //if file can not be opened, return null
-    if(dfile == NULL)
+    if (dfile == NULL)
     {
         return false;
     }
@@ -65,7 +65,7 @@ bool load(const char *dictionary)
     char word[LENGTH + 1];
 
     //Scan through for string up to EOF
-    while(fscanf(dfile, "%s", word) != EOF)
+    while (fscanf(dfile, "%s", word) != EOF)
     {
         //allocate memory for new node
         node *temp = malloc(sizeof(node));
@@ -80,7 +80,7 @@ bool load(const char *dictionary)
 
         int hash_value = hash(word);
 
-        if(table[hash_value] == NULL)
+        if (table[hash_value] == NULL)
         {
             temp->next = NULL;
         }
@@ -102,7 +102,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    if(word_count > 0)
+    if (word_count > 0)
     {
         return word_count;
     }
@@ -113,13 +113,13 @@ unsigned int size(void)
 bool unload(void)
 {
     // loop through hash table
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         //assign pointer
         node *p = table[i];
 
         //loop through list
-        while(p != NULL)
+        while (p != NULL)
         {
             node *tmp = p;
             p = p->next;
@@ -127,7 +127,7 @@ bool unload(void)
         }
 
         //check if last node is NULL
-        if(p == NULL && i == N - 1)
+        if (p == NULL && i == N - 1)
         {
             return true;
         }
