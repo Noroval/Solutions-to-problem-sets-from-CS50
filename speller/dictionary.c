@@ -51,17 +51,18 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    // TODO
-    FILE *DictFile = fopen(dictionary, "r");
-
-    if(DictFile == NULL)
+    // TODO Open file
+    FILE *dfile = fopen(dictionary, "r");
+    
+    //if file can not be opened, return null
+    if(dfile == NULL)
     {
         return false;
     }
 
     char str[LENGTH + 1];
 
-    while(fscanf(DictFile, "%s", str) != EOF)
+    while(fscanf(dfile, "%s", str) != EOF)
     {
         node *temp = malloc(sizeof(node));
 
