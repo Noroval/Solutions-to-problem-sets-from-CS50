@@ -47,7 +47,13 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     //Taking string and returning ASCII index
-    
+    long total = 0;
+
+    for (int i = 0; i < strlen(word); i++)
+    {
+        total += tolower(word[i]);
+    }
+    return total % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -93,7 +99,6 @@ bool load(const char *dictionary)
         }
 
         table[hash_value] = temp;
-
         word_count ++;
     }
 
