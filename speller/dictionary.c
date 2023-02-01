@@ -112,7 +112,7 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // go through
+    // go through hash table
     for(int i = 0; i < N; i++)
     {
         if(table[i] == NULL)
