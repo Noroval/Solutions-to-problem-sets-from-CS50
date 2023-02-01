@@ -28,6 +28,9 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+    int hashNum = hash(word);
+    node *cursor = table[hashNum];
+
     return false;
 }
 
