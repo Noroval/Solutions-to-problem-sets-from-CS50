@@ -73,6 +73,7 @@ bool load(const char *dictionary)
             return false;
         }
 
+        //copy words into node
         strcpy(temp->word, word);
 
         int hashNum = hash(word);
