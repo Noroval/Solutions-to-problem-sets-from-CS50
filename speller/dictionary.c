@@ -70,6 +70,7 @@ bool load(const char *dictionary)
         //allocate memory for new node
         node *temp = malloc(sizeof(node));
 
+        //check if value in NULL
         if(temp == NULL)
         {
             return false;
