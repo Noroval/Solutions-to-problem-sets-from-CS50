@@ -100,7 +100,11 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return word_count;
+    if(word_count > 0)
+    {
+        return word_count;
+    }
+    return 0;
 }
 
 void freenode(node *n)
