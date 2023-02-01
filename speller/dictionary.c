@@ -81,6 +81,7 @@ bool load(const char *dictionary)
 
         int hash_value = hash(word);
 
+        //checks if is pointing to NULL
         if (table[hash_value] == NULL)
         {
             temp->next = NULL;
