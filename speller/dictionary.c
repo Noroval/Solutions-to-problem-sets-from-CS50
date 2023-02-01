@@ -31,7 +31,7 @@ bool check(const char *word)
     int hash_value = hash(word);
     node *cursor = table[hash_value];
 
-    //go through the list
+    //loop through the list
     while(cursor != 0)
     {
         if(strcasecmp(cursor->word, word) == 0)
@@ -112,11 +112,24 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // go through hash table
+    // loop through hash table
     for(int i = 0; i < N; i++)
-    
+
+    //assign pointer
+    node *p = table[i];
+
+    //loop through list
+    while(p != NULL)
     {
-        if(table[i] == NULL)
+        node *tmp = p;
+        p = p->next;
+        free(tmp);
+    }
+
+    //check if last node is NULL
+    if(p == NULL && i == N - 1)
+    {
+        return true;
     }
     return true;
 }
