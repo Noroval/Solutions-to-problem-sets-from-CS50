@@ -109,25 +109,13 @@ unsigned int size(void)
     return 0;
 }
 
-void freenode(node *n)
-{
-    if(n->next != NULL)
-    {
-        freenode(n->next);
-    }
-    free (n);
-}
-
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
+    // go through
     for(int i = 0; i < N; i++)
     {
         if(table[i] == NULL)
-        {
-            freenode(table[i]);
-        }
     }
     return true;
 }
