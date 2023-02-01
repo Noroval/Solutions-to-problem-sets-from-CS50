@@ -28,7 +28,6 @@ node *table[N];
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    // TODO
     int hash_value = hash(word);
     node *cursor = table[hash_value];
 
@@ -68,7 +67,6 @@ bool load(const char *dictionary)
     {
         return false;
     }
-
     char word[LENGTH + 1];
 
     //Scan through for string up to EOF
@@ -85,7 +83,6 @@ bool load(const char *dictionary)
 
         //copy words into node
         strcpy(temp->word, word);
-
         int hash_value = hash(word);
 
         //checks if is pointing to NULL
@@ -98,7 +95,6 @@ bool load(const char *dictionary)
             //point temp to next node
             temp->next = table[hash_value];
         }
-
         table[hash_value] = temp;
         word_count ++;
     }
