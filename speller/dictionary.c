@@ -19,7 +19,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-int countW = 0;
+int word_count = 0;
 
 // Hash table
 node *table[N];
@@ -89,7 +89,7 @@ bool load(const char *dictionary)
 
         table[hashNum] = temp;
 
-        countW += 1;
+        word_count ++;
     }
 
     fclose(DictFile);
