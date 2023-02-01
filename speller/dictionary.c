@@ -59,7 +59,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
-    // TODO Open file
+    // Open file
     FILE *dfile = fopen(dictionary, "r");
 
     //if file can not be opened, return null
