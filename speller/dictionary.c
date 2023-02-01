@@ -46,7 +46,8 @@ bool check(const char *word)
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
-    // 
+    //Taking string and returning ASCII index
+    
 }
 
 // Loads dictionary into memory, returning true if successful, else false
