@@ -19,6 +19,7 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
+int countW = 0;
 
 // Hash table
 node *table[N];
