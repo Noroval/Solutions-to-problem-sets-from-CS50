@@ -76,7 +76,7 @@ bool load(const char *dictionary)
 
         if(table[hashNum] == NULL)
         {
-            temp->next == NULL;
+            temp->next = NULL;
         }
         else
         {
