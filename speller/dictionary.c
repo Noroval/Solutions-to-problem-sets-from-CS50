@@ -92,7 +92,7 @@ bool load(const char *dictionary)
         word_count ++;
     }
 
-    fclose(DictFile);
+    fclose(dfile);
     return true;
 }
 
@@ -100,7 +100,7 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    return countW;
+    return word_count;
 }
 
 void freenode(node *n)
