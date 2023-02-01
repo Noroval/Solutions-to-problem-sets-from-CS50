@@ -80,7 +80,7 @@ bool load(const char *dictionary)
         }
         else
         {
-            temp->next = table[hashNUM];
+            temp->next = table[hashNum];
         }
 
         table[hashNum] = temp;
