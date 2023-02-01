@@ -58,6 +58,19 @@ bool load(const char *dictionary)
     {
         return false;
     }
+
+    char str[LENGTH + 1];
+
+    while(fscanf(DictFile, "%s", str) != EOF)
+    {
+        node *temp = malloc(sizeof(node));
+
+        if(temp == NULL)
+        {
+            return false;
+        }
+        
+    }
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
