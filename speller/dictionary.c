@@ -28,8 +28,8 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    int hashNum = hash(word);
-    node *cursor = table[hashNum];
+    int hash_value = hash(word);
+    node *cursor = table[hash_value];
     while(cursor != NULL)
     {
         if(strcasecmp(cursor->word, word) == 0)
@@ -76,18 +76,18 @@ bool load(const char *dictionary)
         //copy words into node
         strcpy(temp->word, word);
 
-        int hashNum = hash(word);
+        int hash_value = hash(word);
 
-        if(table[hashNum] == NULL)
+        if(table[hash_value] == NULL)
         {
             temp->next = NULL;
         }
         else
         {
-            temp->next = table[hashNum];
+            temp->next = table[hash_value];
         }
 
-        table[hashNum] = temp;
+        table[hash_value] = temp;
 
         word_count ++;
     }
