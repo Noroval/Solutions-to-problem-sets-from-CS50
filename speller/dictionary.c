@@ -82,6 +82,10 @@ bool load(const char *dictionary)
         {
             temp->next = table[hashNUM];
         }
+
+        table[hashNum] = temp;
+
+        countW += 1;
     }
 }
 
