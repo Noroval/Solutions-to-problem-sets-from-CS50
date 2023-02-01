@@ -88,6 +88,7 @@ bool load(const char *dictionary)
         }
         else
         {
+            //point temp to next node
             temp->next = table[hash_value];
         }
 
