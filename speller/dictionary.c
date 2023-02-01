@@ -9,6 +9,8 @@
 
 #include "dictionary.h"
 
+int word_count = 0;
+
 // Represents a node in a hash table
 typedef struct node
 {
@@ -19,7 +21,6 @@ node;
 
 // TODO: Choose number of buckets in hash table
 const unsigned int N = 26;
-int word_count = 0;
 
 // Hash table
 node *table[N];
