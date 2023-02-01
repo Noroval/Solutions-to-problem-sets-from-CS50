@@ -53,16 +53,16 @@ bool load(const char *dictionary)
 {
     // TODO Open file
     FILE *dfile = fopen(dictionary, "r");
-    
+
     //if file can not be opened, return null
     if(dfile == NULL)
     {
         return false;
     }
 
-    char str[LENGTH + 1];
+    char word[LENGTH + 1];
 
-    while(fscanf(dfile, "%s", str) != EOF)
+    while(fscanf(dfile, "%s", word) != EOF)
     {
         node *temp = malloc(sizeof(node));
 
@@ -71,9 +71,9 @@ bool load(const char *dictionary)
             return false;
         }
 
-        strcpy(temp->word, str);
+        strcpy(temp->word, word);
 
-        int hashNum = hash(str);
+        int hashNum = hash(word);
 
         if(table[hashNum] == NULL)
         {
