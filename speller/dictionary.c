@@ -114,22 +114,23 @@ bool unload(void)
 {
     // loop through hash table
     for(int i = 0; i < N; i++)
-
-    //assign pointer
-    node *p = table[i];
-
-    //loop through list
-    while(p != NULL)
     {
-        node *tmp = p;
-        p = p->next;
-        free(tmp);
-    }
+        //assign pointer
+        node *p = table[i];
 
-    //check if last node is NULL
-    if(p == NULL && i == N - 1)
-    {
-        return true;
+        //loop through list
+        while(p != NULL)
+        {
+            node *tmp = p;
+            p = p->next;
+            free(tmp);
+        }
+
+        //check if last node is NULL
+        if(p == NULL && i == N - 1)
+        {
+            return true;
+        }
     }
-    return true;
+    return false;
 }
