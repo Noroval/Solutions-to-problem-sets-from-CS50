@@ -47,6 +47,7 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     //Taking string and returning ASCII index
+    //found this hash function in Discord group, many are using it, I don't think i could make anything better
     long total = 0;
 
     for (int i = 0; i < strlen(word); i++)
