@@ -1,11 +1,10 @@
 from cs50 import get_float
 
+while True:
+    dollars = get_float("Change owed: ")
+    if dollars > 0:
+        return dollars
 
+cents = round(dollars * 100)
 
-
-def get_dollars():
-    while True:
-        n = get_float("Change owed: ")
-        if n > 0
-            return n
 
