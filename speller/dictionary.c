@@ -77,7 +77,7 @@ bool load(const char *dictionary)
         node *temp = malloc(sizeof(node));
 
         //check if value in NULL
-        if(temp == NULL)
+        if (temp == NULL)
         {
             return false;
         }
