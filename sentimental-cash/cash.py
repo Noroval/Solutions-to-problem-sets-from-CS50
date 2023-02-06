@@ -7,4 +7,7 @@ while True:
 
 cents = round(dollars * 100)
 
+count = 0
+
+
 
