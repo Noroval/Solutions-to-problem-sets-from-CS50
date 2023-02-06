@@ -1,5 +1,8 @@
 from cs50 import get_float
 
+# prompts user for positive number
+
+
 while True:
     dollars = get_float("Change owed: ")
     if dollars > 0:
