@@ -13,15 +13,15 @@ while cents >= 25:
     cents - 25
     count += 1
 
-else cents >= 10:
+while cents >= 10:
     cents - 10
     count += 1
 
-else cents >= 5:
+while cents >= 5:
     cents - 5
     count += 1
 
-else cents >= 1:
+while cents >= 1:
     cents - 1
     count += 1
 
