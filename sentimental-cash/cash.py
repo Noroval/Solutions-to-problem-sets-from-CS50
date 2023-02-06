@@ -1,6 +1,6 @@
 from cs50 import get_float
 
-# prompts user for positive number
+# prompts user for positive number and then dollars converts to cents, then calculates how many coins need for change
 
 
 while True:
