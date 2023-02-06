@@ -8,7 +8,7 @@ def main():
 def get_height():
     while True:
         n = get_int("Height: ")
-        if n >= 1 and n <= 8:
+        if n > 0 and n < 9:
             return n
 
 main()
