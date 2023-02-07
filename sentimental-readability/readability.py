@@ -7,7 +7,10 @@ sentences = 0
 text = get_string("Text: ")
 
 for i in range(len(text)):
-    if text.isalpha():
+    if text[i].isalpha():
         letters += 1
+
+    elif text[i] == " ":
+        words += 1
 
     elif 
