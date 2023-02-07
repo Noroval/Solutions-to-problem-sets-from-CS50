@@ -27,4 +27,7 @@ S = sentences / words * 100
 
 index = round(0.0588 * L - 0.296 * S - 15.8)
 
+# printing out the results
+
+
 
