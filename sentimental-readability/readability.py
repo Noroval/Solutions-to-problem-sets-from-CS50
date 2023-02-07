@@ -13,4 +13,6 @@ for i in range(len(text)):
     elif text[i] == " ":
         words += 1
 
-    elif 
+    elif text[i] == "." or text[i] == "!" or text[i] == "?":
+        sentences += 1
+        
