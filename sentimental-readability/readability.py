@@ -6,4 +6,5 @@ sentences = 0
 
 text = get_string("Text: ")
 
-for texts in len(text)
+for i in range(len(text)):
+    if isalpha 
