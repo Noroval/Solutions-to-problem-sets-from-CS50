@@ -6,6 +6,7 @@ sentences = 0
 
 text = get_string("Text: ")
 
+# checks if symbol is letter, if yes, adds to counter
 for i in range(len(text)):
     if text[i].isalpha():
         letters += 1
@@ -15,4 +16,5 @@ for i in range(len(text)):
 
     elif text[i] == "." or text[i] == "!" or text[i] == "?":
         sentences += 1
-        
+
+
