@@ -22,7 +22,7 @@ def main():
 
     # Find longest match of each STR in DNA sequence
     match = {}
-    for d in database[]:
+    for d in database[0]:
         match[i] = longest_match(sequence, i)
     print(match)
     # TODO: Check database for matching profiles
