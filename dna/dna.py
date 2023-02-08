@@ -5,7 +5,7 @@ import sys
 def main():
 
     # Check for command-line usage
-    if len(argv) != 3:
+    if len(sys.argv) != 3:
         print("Usage: python dna.py data.csv sequence.txt")
 
     # TODO: Read database file into a variable
@@ -14,7 +14,6 @@ def main():
         reader = csv.DictReader(file)
         for row in reader:
             database.append(row)
-    print(database)
 
     # TODO: Read DNA sequence file into a variable
 
