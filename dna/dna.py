@@ -24,7 +24,7 @@ def main():
     match = {}
     for d in database[0]:
         match[i] = longest_match(sequence, i)
-    print(match)
+    
     # TODO: Check database for matching profiles
 
 
