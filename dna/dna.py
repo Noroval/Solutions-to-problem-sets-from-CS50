@@ -26,8 +26,8 @@ def main():
     for subsequence in subsequences:
         match[subsequence] = longest_match(sequence, subsequence)
 
-    # TODO: Check database for matching profiles
-
+    # Check database for matching profiles
+    for 
 
     return
 
