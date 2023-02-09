@@ -21,14 +21,17 @@ def main():
         sequence = file.read()
 
     # Find longest match of each STR in DNA sequence
-    match = {}
+    repeats = {}
     subsequences = list(database[0].keys()[1:])
     for subsequence in subsequences:
-        match[subsequence] = longest_match(sequence, subsequence)
+        repeats[subsequence] = longest_match(sequence, subsequence)
 
     # Check database for matching profiles
     for individual in database:
-        
+        match = 0
+        for subsequence in subsequences:
+            if int(individual[subsequence]) == result[subsequence]:
+                match += 1
 
     return
 
