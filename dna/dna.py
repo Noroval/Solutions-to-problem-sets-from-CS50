@@ -15,7 +15,7 @@ def main():
         reader = csv.DictReader(file)
         for row in reader:
             database.append(row)
-    print(database)
+    
     # Read DNA sequence file into a variable
     with open(sys.argv[2], "r") as file:
         sequence = file.read()
@@ -25,14 +25,14 @@ def main():
     subsequences = list(database[0].keys())[1:]
     for subsequence in subsequences:
         repeats[subsequence] = longest_match(sequence, subsequence)
-    print(repeats[subsequence])
+
     # Check database for matching profiles
     for individual in database:
         match = 0
         for subsequence in subsequences:
             if int(individual[subsequence]) == repeats[subsequence]:
                 match += 1
-        print(match)
+
         if match == len(subsequences):
             print(individual["name"])
             return
