@@ -32,13 +32,12 @@ def main():
         for subsequence in subsequences:
             if int(individual[subsequence]) == repeats[subsequence]:
                 match += 1
-
+        print(match)
         if match == len(subsequences):
             print(individual["name"])
             return
 
     print("No match.")
-    print(subsequences)
 
 def longest_match(sequence, subsequence):
     """Returns length of longest run of subsequence in sequence."""
