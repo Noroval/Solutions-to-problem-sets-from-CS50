@@ -22,7 +22,7 @@ def main():
 
     # Find longest match of each STR in DNA sequence
     repeats = {}
-    subsequences = list(database[0].keys()[1:])
+    subsequences = list(database[0].keys())[1:]
     for subsequence in subsequences:
         repeats[subsequence] = longest_match(sequence, subsequence)
 
@@ -30,7 +30,7 @@ def main():
     for individual in database:
         match = 0
         for subsequence in subsequences:
-            if int(individual[subsequence]) == result[subsequence]:
+            if int(individual[subsequence]) == repeats[subsequence]:
                 match += 1
 
         if match == len(subsequences):
