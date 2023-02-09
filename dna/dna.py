@@ -24,13 +24,14 @@ def main():
     repeats = {}
     subsequences = list(database[0].keys())[1:]
     for subsequence in subsequences:
-        repeats[subsequence] = longest_match(sequence, subsequence)
+        reps = repeats[subsequence]
+        reps = longest_match(sequence, subsequence)
 
     # Check database for matching profiles
     for individual in database:
         match = 0
         for subsequence in subsequences:
-            if int(individual[subsequence]) == repeats[subsequence]:
+            if int(individual[subsequence]) == reps:
                 match += 1
 
         if match == len(subsequences):
