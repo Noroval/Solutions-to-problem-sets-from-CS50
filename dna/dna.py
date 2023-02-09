@@ -24,7 +24,7 @@ def main():
     repeats = {}
     subsequences = list(database[0].keys())[1:]
     for subsequence in subsequences:
-        reps = repeats[subsequence]
+        repeats[subsequence] = reps
         reps = longest_match(sequence, subsequence)
 
     # Check database for matching profiles
