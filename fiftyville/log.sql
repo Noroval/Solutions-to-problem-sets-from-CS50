@@ -25,7 +25,12 @@ AND transcript LIKE '%bakery%';
 -- In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow.
 -- The thief then asked the person on the other end of the phone to purchase the flight ticket.
 
+-- Getting the names for license plates (cars) which left crime scenes in our time window.
+
 SELECT name
 FROM people, bakery_security_logs
 WHERE people.license_plate = bakery_security_logs.license_plate
 AND year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute BETWEEN 15 AND 25;
+
+-- Names are: Vanessa, Bruce, Barry, Luca, Sofia, Iman, Diana, Kelsey
+
