@@ -9,3 +9,6 @@ AND street = 'Humphrey Street';
 
 -- Crime took place at 10.15am at Humprey Street bakery. 3 witnesses, all mentioned the bakery. Liitering took place at 16.36, no known witnesses.
 
+SELECT activity
+FROM bakery_security_logs
+WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute = 15;
