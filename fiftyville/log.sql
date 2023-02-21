@@ -14,6 +14,7 @@ FROM interviews
 WHERE year = 2021 AND month = 7 AND day = 28
 AND transcript LIKE '%bakery%';
 
+-- 
 
 SELECT activity, license_plate, minute
 FROM bakery_security_logs
