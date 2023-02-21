@@ -27,5 +27,5 @@ AND transcript LIKE '%bakery%';
 
 SELECT name
 FROM people, bakery_security_logs
-WHERE 
-WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10;
+WHERE people.license_plate = bakery_security_logs.license_plate
+AND year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute 
