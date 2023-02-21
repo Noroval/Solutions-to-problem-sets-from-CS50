@@ -25,6 +25,6 @@ AND transcript LIKE '%bakery%';
 -- In the call, I heard the thief say that they were planning to take the earliest flight out of Fiftyville tomorrow.
 -- The thief then asked the person on the other end of the phone to purchase the flight ticket.
 
-SELECT activity, license_plate, minute
-FROM bakery_security_logs
+SELECT name
+FROM people, bakery_security_logs
 WHERE year = 2021 AND month = 7 AND day = 28 AND hour = 10;
