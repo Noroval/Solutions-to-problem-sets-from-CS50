@@ -63,10 +63,10 @@ SELECT name
 FROM people, phone_calls
 WHERE phone_calls.receiver = people.phone_number
 AND year = 2021 AND month = 7 AND day = 28
-AND caller = '(367) 555-5533'
+AND caller IN ('(367) 555-5533', '(770) 555-1861')
 AND duration <= 60;
 
--- Names are: Robin
+-- Names are: Robin, Philip
 
 -- Finding out to where's earliest flight
 
