@@ -61,3 +61,5 @@ SELECT name
 FROM people, phone_calls
 WHERE phone_calls.receiver = people.phone_number
 AND year = 2021 AND month = 7 AND day = 28 AND name IN ('Bruce', 'Diana', 'Iman', 'Luca');
+
+-- 
