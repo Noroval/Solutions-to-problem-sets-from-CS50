@@ -48,7 +48,7 @@ AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
 
 -- Try to get person names which made phone calls during that day
 
-SELECT name
+SELECT name, caller
 FROM people, phone_calls
 WHERE phone_calls.caller = people.phone_number
 AND year = 2021 AND month = 7 AND day = 28
