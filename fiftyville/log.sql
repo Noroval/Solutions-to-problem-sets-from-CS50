@@ -68,3 +68,5 @@ AND duration <= 60;
 
 -- Names are: Luca
 
+-- Try to get person names which booked the flight for next day's morning
+
