@@ -75,5 +75,5 @@ SELECT * FROM airports;
 SELECT * FROM flights
 WHERE year = 2021 AND month = 7 AND day = 29;
 
-SELECT destination_airport_id
-FROM flights WHERE origin_airport_id = 'Fiftyville' AND year = 2021 AND month = 7 AND day = 29;
+-- Earliest flight is to LaGuardia Airport, NYC
+
