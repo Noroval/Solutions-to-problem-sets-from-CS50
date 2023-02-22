@@ -51,15 +51,18 @@ AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
 SELECT name
 FROM people, phone_calls
 WHERE phone_calls.caller = people.phone_number
-AND year = 2021 AND month = 7 AND day = 28 AND name IN ('Bruce', 'Diana', 'Iman', 'Luca');
+AND year = 2021 AND month = 7 AND day = 28 AND name IN ('Bruce', 'Diana', 'Iman', 'Luca')
+AND duration <= 60;
 
--- Names are: Bruce 4 times and Diana 1 time.
+-- Names are: Bruce, Diana
 
 -- Try to get person names which reiceved phone calls during that day
 
 SELECT name
 FROM people, phone_calls
 WHERE phone_calls.receiver = people.phone_number
-AND year = 2021 AND month = 7 AND day = 28 AND name IN ('Bruce', 'Diana', 'Iman', 'Luca');
+AND year = 2021 AND month = 7 AND day = 28 AND name IN ('Bruce', 'Diana', 'Iman', 'Luca')
+AND duration <= 60;
 
--- Names are: Luca 2 times and Diana 1 time.
+-- Names are: Luca
+
