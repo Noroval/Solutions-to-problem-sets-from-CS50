@@ -71,6 +71,7 @@ AND duration <= 60;
 -- Try to get person names which booked the flight for next day's morning
 
 SELECT * FROM airports;
+
 SELECT * FROM flights
 WHERE year = 2021 AND month = 7 AND day = 29;
 
