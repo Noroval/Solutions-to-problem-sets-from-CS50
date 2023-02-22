@@ -68,7 +68,7 @@ AND duration <= 60;
 
 -- Names are: Luca
 
--- Try to get person names which booked the flight for next day's morning
+-- Finding out to where's earliest flight
 
 SELECT * FROM airports;
 
@@ -77,3 +77,7 @@ WHERE year = 2021 AND month = 7 AND day = 29;
 
 -- Earliest flight is to LaGuardia Airport, NYC
 
+-- Try to get person names which booked the flight for next day's morning
+
+SELECT name
+FROM people, passengers, 
