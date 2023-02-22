@@ -34,3 +34,7 @@ AND year = 2021 AND month = 7 AND day = 28 AND hour = 10 AND minute BETWEEN 15 A
 
 -- Names are: Vanessa, Bruce, Barry, Luca, Sofia, Iman, Diana, Kelsey
 
+-- Try to get person names which withdrawned money from ATM that morning
+
+SELECT name
+FROM people, 
