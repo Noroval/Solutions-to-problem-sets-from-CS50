@@ -83,4 +83,4 @@ SELECT name
 FROM people, passengers, flights
 WHERE flights.id = passengers.flight_id
 AND passengers.passport_number = people.passport_number
-AND 
+AND year = 2021 AND month = 7 AND day = 29
