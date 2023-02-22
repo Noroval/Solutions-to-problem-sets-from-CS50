@@ -86,4 +86,6 @@ AND passengers.passport_number = people.passport_number
 AND year = 2021 AND month = 7 AND day = 29 AND destination_airport_id = 4
 AND name IN ('Bruce', 'Diana', 'Robin', 'Philip');
 
--- Names are: Bruce, Luca
+-- Names are: Bruce
+-- Thief: Bruce
+-- As Bruce called Robin, she's accomplice
