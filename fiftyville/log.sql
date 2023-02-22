@@ -80,4 +80,5 @@ WHERE year = 2021 AND month = 7 AND day = 29;
 -- Try to get person names which booked the flight for next day's morning
 
 SELECT name
-FROM people, passengers, 
+FROM people, passengers, flights
+WHERE 
