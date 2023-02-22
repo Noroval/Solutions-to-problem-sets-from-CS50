@@ -46,3 +46,9 @@ AND atm_location = 'Leggett Street' AND transaction_type = 'withdraw';
 -- Names are; Bruce, Diana, Brooke, Kenny, Iman, Luca, Taylor, Benista
 -- Name which matches: Bruce, Diana, Iman, Luca
 
+-- Try to get person names which made phone calls during that day
+
+SELECT name
+FROM people, phone_calls
+WHERE phone_calls.caller = people.phone_number
+AND year = 2021 AND month = 7 AND day = 28;
