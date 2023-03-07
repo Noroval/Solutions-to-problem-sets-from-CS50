@@ -23,11 +23,17 @@
                 }
 
                 document.querySelector('#check').addEventListener('click', function() {
-                    let input = document.querySelector()
-                })
+                    let input = document.querySelector('input');
+                    if (input.value === 'Riga') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        input.style.bakcgroundColor = 'red';
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+                });
 
-
-            })
+            });
         </script>
     </head>
     <body>
