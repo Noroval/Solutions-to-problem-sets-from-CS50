@@ -6,7 +6,7 @@ body {
 
 footer {
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: -50px;
     padding: 3px;
     background-color: black;
     color: white;
