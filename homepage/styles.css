@@ -1,6 +1,12 @@
+body {
+    background-color: black;
+  }
+
+
+
 footer {
     text-align: center;
     padding: 3px;
-    background-color: DarkSalmon;
+    background-color: black;
     color: white;
   }
