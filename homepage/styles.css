@@ -22,9 +22,7 @@ hr {
   background-color: #2F4F4F;
 }
 
-.nav {
-  color: yellow;
-}
+
 
 footer {
     width: 100%;
@@ -36,3 +34,11 @@ footer {
     background-color:;
     color: white;
   }
+
+  --#{$prefix}nav-tabs-border-width: #{$nav-tabs-border-width};
+  --#{$prefix}nav-tabs-border-color: #{$nav-tabs-border-color};
+  --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
+  --#{$prefix}nav-tabs-link-hover-border-color: #{$nav-tabs-link-hover-border-color};
+  --#{$prefix}nav-tabs-link-active-color: #{$nav-tabs-link-active-color};
+  --#{$prefix}nav-tabs-link-active-bg: #{$nav-tabs-link-active-bg};
+  --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
