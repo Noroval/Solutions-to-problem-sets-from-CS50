@@ -16,10 +16,10 @@ h2 {
 }
 
 hr {
-  height: 3px;
-  border-width: 2;
+  height: 5px;
+  border-width: 5;
   color: blue;
-  background-color: gray 80;
+  background-color: #2F4F4F;
 }
 
 footer {
