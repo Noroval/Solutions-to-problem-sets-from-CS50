@@ -14,6 +14,7 @@ h2 {
 footer {
     text-align: center;
     vertical-align: bottom;
+    position: fixed;
     padding: 3px;
     background-color: black;
     color: grey;
