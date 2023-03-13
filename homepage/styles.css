@@ -22,8 +22,6 @@ hr {
   background-color: #2F4F4F;
 }
 
-
-
 footer {
     width: 100%;
     height: 100px;
@@ -35,6 +33,3 @@ footer {
     color: white;
   }
 
-
-  --#{$prefix}nav-pills-link-active-color: #{$nav-pills-link-active-color green};
-  --#{$prefix}nav-pills-link-active-bg: #{$nav-pills-link-active-bg};
