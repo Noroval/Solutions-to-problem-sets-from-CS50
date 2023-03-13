@@ -22,7 +22,7 @@ hr {
   background-color: #2F4F4F;
 }
 
-.aria-current {
+.nav-link active {
   color: green;
 
 }
