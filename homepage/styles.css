@@ -22,6 +22,11 @@ hr {
   background-color: #2F4F4F;
 }
 
+.aria-current {
+  color: green;
+
+}
+
 footer {
     width: 100%;
     height: 100px;
