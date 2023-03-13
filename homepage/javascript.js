@@ -1,15 +1,8 @@
-import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
+function CarouselFadeExample() {
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel fade>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -51,4 +44,4 @@ function ControlledCarousel() {
   );
 }
 
-render(<ControlledCarousel />);
+export default CarouselFadeExample;
