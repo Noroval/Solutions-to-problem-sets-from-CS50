@@ -16,7 +16,10 @@ h2 {
 }
 
 hr {
-  color: white;
+  height: 3px;
+  border-width: 2;
+  color: blue;
+  background-color: dark grey;
 }
 
 footer {
