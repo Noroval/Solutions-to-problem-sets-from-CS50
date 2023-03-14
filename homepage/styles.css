@@ -74,6 +74,5 @@ footer {
 }
 
 iframe {
-  frame-border
-
+  border: none;
 }
