@@ -1,10 +1,10 @@
 body {
     background-color: #20B2AA;
-    color: white;
+    color: black;
   }
 
 .nav-link {
-  color: white;
+  color: black;
 }
 
 h1 {
@@ -47,6 +47,6 @@ footer {
     text-align: center;
     padding: 3px;
     background-color:;
-    color: white;
+    color: black;
   }
 
