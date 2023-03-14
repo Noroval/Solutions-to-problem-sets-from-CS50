@@ -15,13 +15,17 @@ h2 {
   text-align: center;
 }
 
-table, th, td {
-  border: 1px solid white;
+table {
   border-collapse: collapse;
+  width: 100%;
 }
+
 th, td {
-  background-color: #96D4D4;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
 }
+
 tr:hover {background-color: #D6EEEE;}
 
 /*div {
