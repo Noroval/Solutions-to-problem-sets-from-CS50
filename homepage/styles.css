@@ -69,7 +69,7 @@ footer {
   height: 100%;
 }
 
-div {
+.div {
   position: relative;
   border: 1px solid red;
   height: 300px;
