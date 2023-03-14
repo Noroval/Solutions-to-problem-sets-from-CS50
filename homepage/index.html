@@ -99,13 +99,34 @@
                 You can also surf between the pages to see more information about each of the artists. Feel free to check it out.
             </p>
 
-            <div>
-                <img src="https://picsum.photos/1000/301">
-                <img src="https://picsum.photos/1000/302">
-                <img src="https://picsum.photos/1000/303">
-            </div>
         </main>
 
+        <div>
+            <img src="https://picsum.photos/1000/301">
+            <img src="https://picsum.photos/1000/302">
+            <img src="https://picsum.photos/1000/303">
+        </div>
+
+        <script>
+                        let i = 0;
+
+                        setInterval(function(){
+
+                        if(i == 0) {
+                        images[i].className = "fade-in-image";
+                        } else if(i == images.length ) {
+                        images[i - 1].className = "fade-out-image";
+                        images[0].className = "fade-in-image";
+                        i = 0;
+                        } else {
+                        images[i - 1].className = "fade-out-image";
+                        images[i].className = "fade-in-image";
+                        }
+
+                        i++;
+
+                        }, 2000);
+        </script>
     </body>
 
     <footer>
