@@ -75,25 +75,25 @@
                 <td>13</td>
             </tr>
             <tr>
-                <td title="Come as you are"><b>Nirvana</b</td>
+                <td title="Come as you are"><b>Nirvana</b< /td>
                 <td>Rock</td>
                 <td>1987</td>
                 <td>3</td>
             </tr>
             <tr>
-                <td title="No surprises"><b>Radiohead</b</td>
+                <td title="No surprises"><b>Radiohead</b< /td>
                 <td>Rock</td>
                 <td>1985</td>
                 <td>9</td>
             </tr>
             <tr>
-                <td title="Enjoy the silence"><b>Depeche Mode</b</td>
+                <td title="Enjoy the silence"><b>Depeche Mode</b< /td>
                 <td>Electronic</td>
                 <td>1980</td>
                 <td>15</td>
             </tr>
             <tr>
-                <td title="Pure morning"><b>Placebo</b</td>
+                <td title="Pure morning"><b>Placebo</b< /td>
                 <td>Rock</td>
                 <td>1994</td>
                 <td>8</td>
@@ -118,19 +118,17 @@
 
 
     <script>
-        let i = 0;
-
         setInterval(function () {
 
             if (i == 0) {
-                images[i].className = "fade-in-image";
+                images[i].style.display = 'block';
             } else if (i == images.length) {
-                images[i - 1].className = "fade-out-image";
-                images[0].className = "fade-in-image";
+                images[i - 1].style.display = 'none';
+                images[0].style.display = 'block';
                 i = 0;
             } else {
-                images[i - 1].className = "fade-out-image";
-                images[i].className = "fade-in-image";
+                images[i - 1].style.display = 'none';
+                images[i].style.display = 'block';
             }
 
             i++;
