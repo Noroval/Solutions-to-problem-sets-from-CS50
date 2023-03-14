@@ -110,26 +110,32 @@
 
     </main>
 
+    <div>
+        <img class="image" src="https://picsum.photos/1000/301">
+        <img class="image" src="https://picsum.photos/1000/302">
+        <img class="image" src="https://picsum.photos/1000/303">
+    </div>
+
     <script>
         const images = document.querySelectorAll("img");
 
-let i = 0;
+        let i = 0;
 
-setInterval(function(){
+        setInterval(function () {
 
-  images.forEach( (img, i) => {
-    img.style.display = 'none';
-  })
+            images.forEach((img, i) => {
+                img.style.display = 'none';
+            })
 
-  if( i == images.length) {
-    i = 0;
-  }
+            if (i == images.length) {
+                i = 0;
+            }
 
-  images[i].style.display = 'block';
+            images[i].style.display = 'block';
 
-  i++;
+            i++;
 
-}, 2000);
+        }, 2000);
     </script>
 
 </body>
