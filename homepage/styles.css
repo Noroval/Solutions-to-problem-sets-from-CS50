@@ -22,6 +22,7 @@ table, th, td {
 th, td {
   background-color: #96D4D4;
 }
+tr:hover {background-color: #D6EEEE;}
 
 /*div {
   border: 1px outset red;
