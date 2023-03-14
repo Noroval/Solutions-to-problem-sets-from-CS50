@@ -3,6 +3,10 @@ body {
   color: black;
 }
 
+h1, h2 {
+  background-color: #6e7f80;
+}
+
 .nav-link {
   color: black;
 }
