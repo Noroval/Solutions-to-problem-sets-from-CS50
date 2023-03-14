@@ -28,14 +28,8 @@ td {
 }
 
 tr:hover {
-  background-color: #808000;
+  background-color: #e7fcfe;
 }
-
-/*div {
-  border: 1px outset red;
-  background-color: lightblue;
-  text-align: center;
-}*/
 
 pre {
   text-align: center;
